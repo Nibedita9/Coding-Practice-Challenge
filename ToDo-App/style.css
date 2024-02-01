@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #658ddd, #791f8f);
+    padding: 10px;
+
+}
+.container{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto ;
+    padding: 40px 30px 70px;
+    border-radius: 8px;
+}
+.container h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.add-task-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 1px 2px 4px lightgray;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+#add-task{
+    /* width: 80%; */
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+#Add-button{
+    padding: 14px;
+    width: 20%;
+    border: none;
+    background-color: #791f8f;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* this code will be show circle when add button clicked (add function )  */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 14px;
+    left: 15px;
+
+}
+ul li.checked
+{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(108, 25, 175);
+    border: 1px solid rgb(108, 25, 175);
+    border-radius: 50%;
+    top: 14px;
+    left: 15px;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #cf1212;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+  
+    background-color: #cc3e3e;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid #cc3e3e;
+}
